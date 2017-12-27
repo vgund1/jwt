@@ -1,4 +1,4 @@
-server.port: 9966
+server.port: 9443
 spring.profiles: default
 demo.security.jwt:
   tokenExpirationTime: 15 # Number of minutes
@@ -7,11 +7,14 @@ demo.security.jwt:
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
   
 spring.datasource:
-  url: "jdbc:h2:mem:testdb"
-  driverClassName: org.h2.Driver
-  username: sa
-  password: ""
-  data: "classpath*:data.sql"
+  url: "jdbc:mysql://localhost:3306/oauth2"
+  driverClassName: com.mysql.jdbc.Driver
+  username: root
+  password: vijay
 spring.jpa:
-  database-platform: org.hibernate.dialect.H2Dialect
+  database-platform: org.hibernate.dialect.MySQLDialect
 spring.h2.console.enabled: true
+
+server.ssl.key-store: classpath:keystore.jks
+server.ssl.key-store-password: pass123
+server.ssl.key-password: pass123

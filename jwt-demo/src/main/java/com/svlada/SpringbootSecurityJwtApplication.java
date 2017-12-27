@@ -18,3 +18,17 @@ public class SpringbootSecurityJwtApplication {
 		SpringApplication.run(SpringbootSecurityJwtApplication.class, args);
 	}
 }
+
+
+//uncomment below code for deployment
+
+
+/*@SpringBootApplication
+@EnableConfigurationProperties
+public class SpringbootSecurityJwtApplication extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure (SpringApplicationBuilder builder) {
+        return builder.sources(SpringbootSecurityJwtApplication.class);
+    }
+}*/
