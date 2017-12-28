@@ -1,7 +1,10 @@
 package com.medi.svmkrd;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+
 
 /**
  * Sample application for demonstrating security with JWT Tokens
@@ -24,7 +27,7 @@ public class SpringbootSecurityJwtApplication {
 
 @SpringBootApplication
 @EnableConfigurationProperties
-public class SpringbootSecurityJwtApplication extends SpringBootServletInitializer {
+public class SpringbootSecurityJwtApplication extends SpringBootServletInitializer{
 
     @Override
     protected SpringApplicationBuilder configure (SpringApplicationBuilder builder) {
