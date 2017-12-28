@@ -1,6 +1,6 @@
 server.port: 9443
 spring.profiles: default
-demo.security.jwt:
+com.medi.svmkrd.security.jwt.settings:
   tokenExpirationTime: 15 # Number of minutes
   refreshTokenExpTime: 60 # Minutes
   tokenIssuer: http://svlada.com
