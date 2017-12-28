@@ -6,7 +6,7 @@
 	<groupId>com.medi.svmkrd</groupId>
 	<artifactId>jwt-demo</artifactId>
 	<version>1</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>springboot-security-jwt</name>
 	<description>Secure your API with JWT Tokens</description>
@@ -80,10 +80,10 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 

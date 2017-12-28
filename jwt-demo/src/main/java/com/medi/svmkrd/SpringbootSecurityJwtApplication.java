@@ -1,6 +1,5 @@
 package com.medi.svmkrd;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
@@ -11,19 +10,19 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  *
  * Aug 3, 2016
  */
-@SpringBootApplication
+/*@SpringBootApplication
 @EnableConfigurationProperties
 public class SpringbootSecurityJwtApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootSecurityJwtApplication.class, args);
 	}
-}
+}*/
 
 
 //uncomment below code for deployment
 
 
-/*@SpringBootApplication
+@SpringBootApplication
 @EnableConfigurationProperties
 public class SpringbootSecurityJwtApplication extends SpringBootServletInitializer {
 
@@ -31,4 +30,4 @@ public class SpringbootSecurityJwtApplication extends SpringBootServletInitializ
     protected SpringApplicationBuilder configure (SpringApplicationBuilder builder) {
         return builder.sources(SpringbootSecurityJwtApplication.class);
     }
-}*/
+}
