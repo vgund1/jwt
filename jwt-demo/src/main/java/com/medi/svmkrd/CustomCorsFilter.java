@@ -13,7 +13,7 @@ import org.springframework.web.filter.CorsFilter;
  *
  * Aug 3, 2016
  */
-public class CustomCorsFilter extends CorsFilter {
+public class CustomCorsFilter extends CorsFilter   {
 
     public CustomCorsFilter() {
         super(configurationSource());
